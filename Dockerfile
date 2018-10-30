@@ -41,7 +41,7 @@ RUN yum -y --setopt=tsflags=nodocs update && \
         curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin/ --filename=composer && \
         curl -sL https://rpm.nodesource.com/setup_8.x | bash - && \
         yum -y install libpng12-1.2.50-10.el7.x86_64 \
-        libpng12-devel-1.2.50-10.el7.x86_64 && \
+        libpng12-devel-1.2.50-10.el7.x86_64
 
 COPY conf/php.ini /etc/php.ini
 COPY conf/php-fpm.d/www.conf /etc/php-fpm.d/www.conf
