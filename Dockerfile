@@ -1,5 +1,5 @@
 FROM centos:7
-MAINTAINER AN <an@zeppelinen.com>
+
 SHELL ["/bin/bash", "-c"]
 
 ARG git_user
@@ -30,6 +30,7 @@ RUN yum -y --setopt=tsflags=nodocs update && \
         php72u-tidy \
         php72u-xml \
         php72u-xmlrpc \
+	php72u-process \
         python-setuptools \ 
         git \
         npm \
